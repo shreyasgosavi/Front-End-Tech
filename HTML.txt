@@ -1,0 +1,198 @@
+				HTML
+
+HTML - 	Basic building block of the web.
+	We add tags which helps the browser to identify and process them in the page.
+	
+	Tags are often interchanged with the term "Element" : tag is the keyword that is 	
+	used for mark-ups while element refer to the tags as well as the content inside the 
+	tags.
+
+	HTML has 2 main block (element) of code ,the block of code which is not visible to the user
+	(head) and another block which is visible to the user (body).
+
+	Added more meta-data in the "head" element using the meta-tag .
+
+
+	Formatting Content in HTML.
+	
+	Block-level Element : Takes space of an entire row, basically the curser moves to 
+		the next line after the end of the element.
+
+	Inline Element : 
+
+	HTML Entity : special characters that can be added with the help of html-entity.
+		It begins with & : for example for space we use Non-Breaking Space entity
+		which is represented by "&nbsp"
+
+	abbr	<--	Tag can be used to get the abbreviated form of a short-cut. It has 
+			nothing to do with screen-readers, assistive tech.
+
+	--------------------------------------------------------------------------------------------------------------------------------
+
+	Once done writing with the html code it is better to validate it with HTML Validator
+	provided by the W3C.
+
+	--------------------------------------------------------------------------------------------------------------------------------
+
+	Lists in HTML :
+
+		Types : 1. Ordered List	
+			2. Unordered List
+			3. Description List
+				List which describes content specified in the heading of the
+			list, it has one additional tag as compared to the OL and UL.
+			
+			Description List has 3 tags namely : DL, DT, DD 
+		
+			DL	<--	Description List
+			DT	<--	Description Term
+			DD	<--	Description Details
+	
+			Format :
+				<dl>
+					<dt>Desctiption Title 1</dt>
+						<dd>Details about the specified title</dd>
+					</dt>
+
+					<dt>Desctiption Title 2</dt>
+						<dd>Details about the specified title</dd>
+					</dt>
+				</dl>
+
+
+
+	Links In HTML :
+
+		They are used to link different web-pages to form the web. Based on how the
+	link is used they are classified into 3 types :
+		1. Absolute Reference
+		2. Relative Reference
+		3. Internal Reference.
+
+
+		In order to make a link downloadable we just need to add "download" attribute 
+		in a tag. 
+
+			<a href="mail" download> Link which might contain image/document ,etc</a>
+
+		Additional functionality : 
+			<a href= "mailto: somemailaddress" >Mail</a>
+			<a href= "tel: mobileNumber">Number</a>
+
+			<a href= "/" >HOME</a>	   <--	   Points to the default root page
+	--------------------------------------------------------------------------------------------------------------------------------
+	
+	Tip : 	Never add email address in the link because there are spider that crawl the
+		web which may harvest the email.
+		
+		Need to research more on the above mentioned note.
+
+	--------------------------------------------------------------------------------------------------------------------------------	
+
+	Adding Images :
+
+		<img> tag is used to add the image to the page. 
+		
+		<img src="image_link" alt="will display if image brokes" 
+		title="will display the content while hovering over the image" 
+		width="200" heigth="300" />
+
+		It is better to provide the attributes mentioned above.
+	
+		1:35:00 
+		Cumulative-Layout-Shift : necessary to specify the height and width.
+
+
+	--------------------------------------------------------------------------------------------------------------------------------
+		
+		Terminologies :
+		
+			fold : the last line below which the content of page is not visible.
+		
+			below-the-fold : content that is present below the fold.
+
+
+	--------------------------------------------------------------------------------------------------------------------------------	
+	
+		Based on the fold concept we can add one more attribute which specifies
+		when to load the image i.e. to load all the images on loading or to load
+		the image once the we reach closer to it.
+
+		attribute that is used to do that : "loading" which has 2 values lazy, eager.
+		By default the value is "eager".
+
+
+
+		Links : irfanview.com 	<-- 	for modifying the image and saving them
+
+
+
+	Semantic-Tags :
+		<header>	<--	For displaying the upper section, 
+		<main>		<--	Contains the main content, 
+		<footer>	<--	The end of the file.
+
+		<section>, <hr>, <nav>, <article>, <time datetime="08:00">8 pm </time>
+
+		Surprise : <span></span> and  <div> has no semantic meaning like the section </div>
+				Work on using semantic element.
+	
+		The semantic-tags helps to provide meaning to back-end processing (browser-
+		level).
+		
+
+	Tables :
+
+		<table> tag is used to define tables in html.
+
+		Sequence :
+			<table>
+				<tr>
+					<td>Data 1</td>
+					<td>Data 2</td>
+					<td>Data 3</td>
+				</tr>
+
+				<tr>
+					<td>Data 1</td>
+					<td>Data 2</td>
+					<td>Data 3</td>
+				</tr>
+
+			</table>
+
+
+		Semantics In Tables :
+			<caption>	<--	Tells about the table.
+			<thead>		<--	Can be used to contain the header
+			<tbody>		<--	Contents of the table	
+			<tfoot>		<--	Mostly Summary of the table.
+			th
+			
+		
+			Additional attributes can be added for semantics like scope which
+		defines what the element is whether it is a row or a column (for thead tag), 
+		 
+
+	Forms :
+		
+		Used to get the data from the user. There are some attribute that adds different
+		functionality to the form fields.
+
+		placeholder, required, autofocus (only one field in the form), autocomplete=on.	
+
+
+		Categorising the fields : fieldset, 
+ 
+			
+		
+
+
+
+
+
+
+
+
+
+	
