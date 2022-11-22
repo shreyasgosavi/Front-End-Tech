@@ -1,0 +1,138 @@
+CSS
+
+Different Methods to style the page.
+	1. External CSS		3. Inline-CSS
+	2. Internal CSS
+
+
+Different ways to catch the elements :
+	1. Element Selector	3. Id Selector
+	2. Class Selector
+
+
+Terms	:  Specificity, Inheritance 
+	
+Note 	:
+	The cross mark while inspecting the element is basically the design that are over-
+ridden by some other design due to specificity or cascading reason.
+
+	Color-paletts  : coolors.com
+
+
+Units and Sizes :
+
+	Determines the size of the objects in the page. 
+	
+	Categories of Sizes :
+		1. Absolute Size	2. Relative Size
+		
+		1. Absolute Size : The size of the text remains the same even thought we
+			try to change the browser settings or changing the window size.
+			Eg : px
+
+		2. Relative Size : The size of the object is relative to its parent node.
+			Eg : 
+				%	<--	Percent related to the parent element.	
+				rem	<-- 	Size-Relative to the root element.
+						(Generally used for font-size)
+
+				em	<--	Size-Relative to the parent element.
+						(Used for specifying margin-padding prop.) 
+
+				ch	<--	Width based-on the character size.
+	
+	For absolute size the most widely used unit is px, default size in the browser is 
+	16px.
+
+
+CSS Box-Model :
+
+	Everything in css are boxes, arrangement of those elements is very useful.
+	CSS Box-model has several components namely : content, padding, border and margin.
+	
+	By-default browser assigns some value to the components which might result in 
+	inconsistency in future (using rem can lead to unexpected results), hence it is
+	necessary to reset the CSS components value and take control of them.
+
+	Like this :
+		*{
+			margin:0;
+			padding:0;
+			box-sizing: border-box;
+		}
+	
+	--------------------------------------------------------------------------------------------------------
+
+	Note : 	box-sizing specifies how the over-all size of the program will be calculated.
+		Default value is content-box which means what-ever value of the component
+		we specify it just applies it to the content only the value of padding,
+		margin is not taken into account.	
+	
+	--------------------------------------------------------------------------------------------------------
+
+
+	Outline tag is used to cover the end of the boundries.
+
+
+Typography :
+
+	It is the way in which the text is arranged and presented. 
+	We can change the properties of the text like the font, spacing between the words,
+	letters, etc. 	
+	
+	Several css properties are there that make such changes possible eg :
+
+		font-size, font-family, text-align, text-decoration, letter-spacing, etc.
+		
+
+		
+Styling Links :
+	
+	Links are contained in the anchor tag in which the href attribute links to the page
+	where we wanted	to visit. Like other properties, some properties of links are set by 
+	the browser by default.
+	
+	Eg:	text-decoration is underline, color is blue, cursor is pointer.
+
+	Links have multiple states and state-related attributes that help identify them.
+	States of the links are : visited, hover, un-visited.
+
+	Those properties can be specified with the help of the pseudo-classes specified by
+	":" after the attribute-name.
+	
+	Eg: 	a:hover{
+
+			color:dodgerblue;	
+		}
+
+		
+
+
+	Note : The order of writing the preprocessors is also important, proper ordering of
+	several events :
+
+	a{} ; a:visited; a:Hover
+
+
+Display :
+	
+	There are two types of elements inline and block level elements. Inline elements are
+the one that take only required space of an object.
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
