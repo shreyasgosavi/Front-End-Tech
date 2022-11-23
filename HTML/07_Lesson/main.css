@@ -1,0 +1,27 @@
+
+html{
+    font-size:22px;
+    background-color: #333;
+    color: whitesmoke;
+}
+
+a{
+    color: rgb(39, 120, 182);
+    text-decoration: none;
+}
+
+a:visited{
+    color:darkgray;
+    
+}
+
+
+a:hover{
+    color:rgb(124, 161, 21);
+}
+
+td,th,table,caption {
+    padding: 0.5rem;
+    border: 1px solid rgb(241, 236, 236);
+    border-collapse: collapse;
+}
