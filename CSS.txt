@@ -116,8 +116,70 @@ Styling Links :
 
 Display :
 	
-	There are two types of elements inline and block level elements. Inline elements are
-the one that take only required space of an object.
+	Display property defines how much space does the element in the page takes 
+	
+	There are two major display properties they are inline and block level elements.
+
+	Inline-level elements are the one that takes only required space for an object.
+	Block-level elements take the entire width by default. Multiple block-level elements 
+	stack-on each other.
+	
+	We can change the properties like margin, padding, etc of the block-level elements
+	but not all those properties of the inline-level elements can be changed.
+
+	Margin property of the inline element is not affected, but we can add padding to the
+	element.
+
+	--------------------------------------------------------------------------------------
+	
+	Note : 
+	   Why margin-top and margin-bottom property of inline elements remains unchanged?
+	-->	Top and bottom margins do not affect inline elements because inline elements flow 
+		with content on the page. You can set left and right margins/padding on an inline 
+		element but not top or bottom because it would disrupt the flow of content. You 
+		can set margins on block (or inline-block but it will only look right if you set 
+		the vertical align right) because block level elements disrupt the flow of 
+		content.
+
+	--------------------------------------------------------------------------------------
+	
+Css Float :
+	
+	Float is the property of the element that breaks the normal flow of the page and makes the
+	rest of the content wrap-around it either left-or-right depending upon the value specified 
+	in the float property.
+	
+	One application of float concept property is the arrangement of image and text. As mentioned 
+	earlier float breaks the flow of the page and hence making changes to the property of the
+	other component may affect the overall DOM of the page.
+
+	EG : 
+
+CSS columns :
+	
+	Column property helps to split the content into seperate columns.The property is specified
+	inside the container by giving the count of column (column-count).
+	Other properties like the width, rule can be specified.
+
+	Some-times case may arise in which an element might break into another column, meaning
+	some parts of the element goes into another column. To avoid that we make use of the 
+	"break-inside" property and set in to avoid.
+
+	container{
+		column-count:4;
+		column-width:200px;
+		break-inside: avoid;
+	}
+
+
+Position :	Revision required.
+	
+	This property specifies how the element is placed in the document with respect to its
+	ancestor based on the value specified. Determines the flow of the page. By default the
+	value is "static".
+
+	Different Values of position property :
+		Static, Absolute, Relative, fixed, sticky.
 
 	
 
