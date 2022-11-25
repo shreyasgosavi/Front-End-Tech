@@ -178,8 +178,72 @@ Position :	Revision required.
 	ancestor based on the value specified. Determines the flow of the page. By default the
 	value is "static".
 
+
+	/* TODO : In detail about every property */
 	Different Values of position property :
 		Static, Absolute, Relative, fixed, sticky.
+	
+	
+	
+Flex-Box:
+	
+	It is the display property for containers that helps in proper arrangement of elements 		that are present in it. It is defined by the property display.
+
+		display:flex;
+
+	For practicing visit :Flexbox foggy.
+	
+
+Grid-System :
+	
+	Reference that helps to systematically align the components of the web. They are 
+	structural foundation for our design projects.
+
+	Here we arrange the container elements in certain patterns which might assist in 
+	designing the UI.
+
+	Properties that can be used in order to define the grid structure.
+		display : grid;
+		display-auto-flow:column/row.	<--	Used to arrange the column in row or 							column fashion.
+
+		grid-template-column:200px 100px <--	Can be used to define the structure of
+							the grid.
+
+		we can make use of the repeat() function in "grid-template-column" property 			which avoids writing multiple same size-values of the column.
+
+		EG :	grid-template-column: repeat(2, 200px 100px)
+			
+			The above specified property will create the grid having 4 columns by
+			repeating columns 200px,100px 2 times.
+
+			To change the row we make use of the grid-auto-rows.
+
+			We can also make implement this in different way like first specifying
+			"grid-template-row" and then "grid-auto-columns".
+		
+	
+	For practice : Grid-garden.com
+	
+		
+	
+Media-Query 
+	
+	It is the concept that helps to modify the look of the browser with respect to some 
+	property and that property is view-port width.
+	
+	Syntax :
+		@media media-type and (property : breakpoint)
+
+Variables in CSS :
+		
+	Variables are used to store the value of some property which can be used anywhere in 		the file. It avoids repetitive writing of the values for some property like color 		property. 
+	The advantage of using variables in css is that if we want to change the value of a 	property that is reflected in multiple parts of the project, we only need to change the 	value of the variable which will also update the other values.
+
+	
+Functions :
+	
+	There are pre-defined functions in css that we use in order to control the property of
+	the components like max(), min(), url(), rgb(), etc.
 
 	
 
