@@ -1,0 +1,27 @@
+body{
+
+    background-color: #d3a13c;
+    color: #30302d ;
+    font-size:1.5rem;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: blue; 
+}
+
+a:visited{
+    color:brown;
+}
+
+a:hover, a:focus{
+    color:rgb(0, 123, 255);
+}
+
+a:active{
+    background-color: rgb(121, 33, 33);
+    color:whitesmoke;
+    border-radius: 5px;
+    
+}

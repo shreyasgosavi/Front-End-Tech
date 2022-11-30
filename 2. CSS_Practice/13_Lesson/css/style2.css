@@ -1,0 +1,22 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.image-container{
+
+    width:40vw;
+    height:60vh;
+
+    /* background-color:hsl(207, 51%, 79%); */
+    background-image:linear-gradient(white,blue);
+    /* background-image:  url(../images/transparent-image.jpg),
+                        linear-gradient(white,blue); */
+    background-size: contain;
+    background-repeat: repeat;
+    background-position: left;
+
+    /* background-image: url("../images/cricket.jpg"); */
+
+}

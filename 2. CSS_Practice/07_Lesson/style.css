@@ -1,0 +1,58 @@
+body{
+
+    background-color: #D9AE59;
+    color: #000000;
+    font-size:1.5rem;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: blue; 
+}
+
+a:visited{
+    color:brown;
+}
+
+a:hover, a:focus{
+    color:rgb(0, 123, 255);
+}
+
+a:active{
+    background-color: rgb(121, 33, 33);
+    color:whitesmoke;
+    border-radius: 5px;
+    
+}
+ol{
+    list-style-type: lower-roman;
+    /* padding-inline-start: 40px; */
+}
+
+ul{
+    /* list-style-type: none;  */
+    /* padding:0; */
+    line-height:1.6;
+    list-style-image: url("images/arrow_Image.png");
+}
+
+ul li:nth-child(2){
+    color:red;
+}
+
+#pblock{
+    background-color: beige;
+    width: 60%;
+    padding: 0.4em;
+    border-radius:5px;
+}
+
+.pSpan{
+    background-color: darkgray;
+    border:1px solid black;
+    margin:20px;
+    padding:15px;    
+    display:inline-block;
+}

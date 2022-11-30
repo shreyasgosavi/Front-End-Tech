@@ -1,0 +1,41 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+img{
+    display:block;
+}
+
+.firstSample{
+    border:1px solid black;
+}
+
+.firstSample img{
+
+    width:30%;
+    height:auto;
+}
+
+.secondSample {
+    
+    border: 1px solid black;
+    width:60%;
+    height:250px;
+    margin-inline:auto;
+    margin-bottom:2rem;
+    background-image:url('../images/cricket.jpg');
+    background-color:khaki;
+    /* background-position:center left; */
+    background-size: cover;
+}
+
+.secondSample p{
+    font-size: 2rem;
+    color:white;
+    font-weight: bold;
+    text-align:center; 
+    text-shadow:2px 2px black;
+}

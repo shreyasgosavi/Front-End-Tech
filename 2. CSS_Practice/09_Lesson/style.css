@@ -1,0 +1,28 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.columnClass{
+
+    column-count: 4;
+    column-width:200px;
+    column-rule: 2px solid black;
+    column-gap:2rem;
+    break-inside: avoid;
+}
+
+.quote{
+    font-size: 3rem;
+    color:rgb(170, 62, 62);
+    column-span: all;
+    text-align:center;
+    margin-top:0.5em;
+    margin-bottom:0.5em;
+}
+
+.nowrap2{
+    white-space: nowrap;
+}

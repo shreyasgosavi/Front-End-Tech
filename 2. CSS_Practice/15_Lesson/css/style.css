@@ -1,0 +1,113 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box; 
+}
+
+
+:root{
+
+    --HEADER-COLOR:bisque;
+    --HEADER-H1: #000;
+    --MAIN-BGCOLOR:cornsilk;
+    --FOOTER-BGCOLOR:burlywood;
+    --ARTICLE-H2:azure;
+}
+
+/* ------------------------------------------------------------------------------------ */
+
+body{
+    font-family: monospace;
+    font-size: large;
+}
+
+/* ------------------------------------------------------------------------------------ */
+
+/* Design for Header section of the Page */
+
+header{
+    display:flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    background-color: var(--HEADER-COLOR);
+    text-align:center;
+    color: var(--HEADER-H1);
+    height:20vh;    
+}
+
+
+
+/* Styling un-ordered List  */
+header ul{
+    /* list-style-position: inside; */
+    list-style-type: none;
+    /* text-decoration: double; */
+    
+}
+
+/* Styling links  */
+header a{
+    text-decoration: none;
+    color:red;
+}
+
+
+
+
+/* ------------------------------------------------------------------------------------ */
+
+/* Design for Main section of the Page */
+
+main{
+    background-color: var(--MAIN-BGCOLOR);
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+article{
+    /* width: 100%; */
+    height:40%;
+    /* border: 2px solid green; */
+}
+
+article h2{
+    text-align: center;
+    color:var(--ARTICLE-H2);
+    font-size: x-large;
+    font-family: cursive;
+}
+
+#art1{
+    background-image: url("../images/img1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+#art2{
+    background-image: url("../images/img2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center
+}
+
+/* ------------------------------------------------------------------------------------ */
+
+/* Design for Footer section of the Page */
+
+
+footer{
+    background-color: var(--FOOTER-BGCOLOR);
+    /* position: fixed; */
+    text-align: center;
+    padding: 2em;
+    width:100%;
+    bottom:0;
+    display:flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}

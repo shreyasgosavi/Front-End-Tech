@@ -1,0 +1,23 @@
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-size: 1.3rem;
+}
+
+.floatClass{
+    width:30vh;
+    height:30vh;
+    background-color: blueviolet;
+}
+
+.left{
+    float:left;
+    margin-right:1em;
+}
+
+.clear{
+    clear:both;
+}

@@ -1,0 +1,25 @@
+
+
+body {
+
+    /* text-transform: lowercase; */
+    /* text-indent: 5em; */
+
+    font-family: cursive;
+    letter-spacing: 0.2em;
+    text-align: justify;
+    
+}
+
+/* input, button{
+    font:inherit;
+} */
+
+#content{
+    text-indent: 2em;
+    text-transform: initial;
+}
+
+.cross{
+    text-decoration:line-through;
+}

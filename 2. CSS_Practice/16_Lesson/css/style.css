@@ -1,0 +1,156 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box; 
+}
+
+
+:root{
+
+    --HEADER-COLOR:bisque;
+    --HEADER-H1: #000;
+
+    --HEADER-A-COLOR:red;
+    --HEADER-A-HOVER:rgba(255, 0, 0, 0.718);
+    --HEADER-A-VSITED-COLOR:rgb(255, 0, 132);
+
+    --MAIN-BGCOLOR:cornsilk;
+    --ARTICLE-H2:azure;
+
+    --FOOTER-BGCOLOR:burlywood;
+    --FOOTER-H2: #000;
+}
+
+/* ------------------------------------------------------------------------------------ */
+
+body{
+    font-family: monospace;
+    font-size: large;
+}
+
+/* ------------------------------------------------------------------------------------ */
+
+/* Design for Header section of the Page */
+
+header{
+    display:flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    background-color: var(--HEADER-COLOR);
+    text-align:center;
+    color: var(--HEADER-H1);
+    height:20vh;    
+}
+
+
+
+/* Styling un-ordered List  */
+header ul{
+    /* list-style-position: inside; */
+    list-style-type: none;
+    /* text-decoration: double; */
+
+    
+}
+
+/* Styling links  */
+header a{
+    text-decoration: none;
+    color:var(--HEADER-A-COLOR);
+    font-weight: bold;
+    /* padding:0.3em; */
+}
+
+header a:visited{
+    color:var(--HEADER-A-VSITED-COLOR);
+}
+
+header a:hover,a:focus  {
+    color:var(--HEADER-A-HOVER);
+    background-color: rgb(188, 197, 16);
+    border-radius: 5px;
+}
+
+/* ------------------------------------------------------------------------------------ */
+
+/* Design for Main section of the Page */
+
+main{
+    background-color: var(--MAIN-BGCOLOR);
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+article{
+    /* width: 100%; */
+    height:40%;
+    /* border: 2px solid green; */
+}
+
+article h2{
+    text-align: center;
+    color:var(--ARTICLE-H2);
+    font-size: x-large;
+    font-family: cursive;
+}
+
+#art1{
+    background-image: url("../images/img1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+#art2{
+    background-image: url("../images/img2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center
+}
+
+/* ------------------------------------------------------------------------------------ */
+
+/* Design for Footer section of the Page */
+
+
+footer{
+    background-color: var(--FOOTER-BGCOLOR);
+    /* position: fixed; */
+    text-align: center;
+    padding: 2em;
+    width:100%;
+    bottom:0;
+    display:flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    color:var(--FOOTER-H2);
+}
+
+/* ------------------------------------------------------------------------------------ */
+
+/* Dark-Mode based on the System-settings */
+
+@media (prefers-color-scheme: dark){
+
+    :root{
+
+        --HEADER-COLOR:rgb(59, 59, 57);
+        --HEADER-H1: whitesmoke;
+    
+        --HEADER-A-COLOR:red;
+        --HEADER-A-HOVER:rgba(255, 0, 0, 0.718);
+        --HEADER-A-VSITED-COLOR:rgb(255, 0, 132);
+    
+        --MAIN-BGCOLOR:rgb(145, 144, 142);
+        --ARTICLE-H2:azure;
+
+        
+        --FOOTER-BGCOLOR:rgb(28, 25, 22);
+        --FOOTER-H2: whitesmoke;
+    }
+
+}

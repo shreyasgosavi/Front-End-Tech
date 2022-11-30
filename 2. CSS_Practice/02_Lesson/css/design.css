@@ -1,0 +1,27 @@
+body{
+    background-color: #F6FFDA;
+    font-size: large;
+    font-weight: bold;
+}
+
+
+p{
+    color:#0F2102;
+}
+
+
+#pCricket{
+
+    border: 1px solid black;
+    width:100%;
+
+}
+
+#pBadminton{
+    border:1px solid black;
+    width:100vw;
+}
+
+/* section h2{
+    color:blue;
+} */
