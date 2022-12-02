@@ -1,0 +1,97 @@
+TypeScript :
+	
+	About:
+	
+	It is said that the TypeScript is the superset of jsvascript. Allows to write the js 		code in precise manner such that our code faces less errors at runtime.It is about 		type-safety.
+
+	There are some behaviour that are unexpected in javascript that occur mainly because of 	the type-mismatching.
+	
+	eg: Performing 'integer' addition to the 'String' to get the 'String'.
+	
+	What it actually do?
+	
+	It does static checking of the javascript code that is written. It is a development 		tool. The typescript file is converted into javascript and then used in the 		application. Gives us the potential error that might occur during the run-time.
+
+
+	Installation :	
+
+		There are two ways of installing typescript one is the normal software which 			has core functionality and the other one has an additional config file where we 		can specify the required specification.
+	
+		Normally we install the typescript compiler "tsc" globally.
+
+
+		Types in TypeScript :
+			Number, String, Boolean 
+
+	
+		Specifying Types in Type-Script :
+		
+			Syntax to specify the data-type is : let variableName :data-type = 				value.For common cases the type-of the data is inferred by the value 			assigned to it.
+		
+		If the value is not assigned at the declaration then we need to give the data-			type while declaring.
+
+			let val: String;
+
+
+	Functions :
+
+		It is said that the type-script is superset of java-script hence the funtion-		definition syntax of ts is similar to that of js. Here we apply the type-checking rule 		which can be used to avoid error like type-mixing in rest of the code.
+	
+		function functionName( param_1 :data-type ){
+			return param_1;	
+		}
+
+		If not mentioned the data-type then type-script takes the value as "any" which 			is not good when it comes to assigning the value returned by the function to a 	
+		variable.
+
+		
+		There can be more than one parameters inside the function. 
+			Eg : 	function userDetails( name: String, age: number){}
+	
+		There can be a scenario in which we need to pass only limited number of 			arguments while calling the function, in that case we need to specify default
+		values to the parameters which will be assigned if no value is given while
+		calling the function.
+	
+		TypeScript makes easy for us by specifying that in the parameter section.
+
+			Eg : function userDetails( name: String = "SHR", age: number = 0){}	
+
+			while calling : userDetails("Shreyas")
+				In the above case the default value for age will be 0.
+
+			After compiling the type-script code few lines of code are added to 				handle this scenario.
+
+			EG: function limitedParameter(name :String ="ABC", score :number = 0){
+    				return "Name is "+name+" and the score is "+score;
+			    }
+
+			    console.log(limitedParameter())
+	
+			JavaScript generated code :
+			
+				function limitedParameter(name, score) {
+    					if (name === void 0) { name = "ABC"; }
+   				 	if (score === void 0) { score = 0; }
+    					return "Name is " + name + " and the score is " + score;
+					}
+					console.log(limitedParameter());
+			
+			Output :	Name is ABC and the score is 0	
+
+				
+
+			
+
+		
+
+	
+
+
+
+
+
+
+
+
+
+	
