@@ -14,7 +14,11 @@ interface Car {
 //SUV interface extending the CAR intface
 interface SUV extends Car {
     off_roading :boolean
+
+    // aFunction() :String;
 }
+
+// const car1 = new SUV()       Cannot be done
 
 const Mahindra :SUV = {
 
@@ -23,9 +27,14 @@ const Mahindra :SUV = {
     engineType : "M-Hawk",
     doors :5,
     efficiency : 12,
-    off_roading :true
+    off_roading :true,
+    // aFunction(){
+    //     return "S"
+    // }
 }
 
+
+// console.log(Mahindra.aFunction())
 
 //Another interface that extends Car interface
 interface Sports extends Car{
